@@ -17,9 +17,7 @@ body {
     border-top: 3px solid #F6F5FA;
     border-bottom: 2px solid #F6F5FA;
 }
-.hide {
-    display: none;
-}
+
 .search-bar svg {
     padding: 1rem;
 }
@@ -102,7 +100,9 @@ footer {
     color: #A1A1A5;
     padding: 1rem;
 }
-
+.hide {
+    display: none;
+}
 @media screen and (min-width: 768px){
     .container {
         grid-template-columns: repeat(2, 1fr);

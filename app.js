@@ -30,8 +30,7 @@ async function getData () {
 
  function displayData() {
      for (let x = 0; x < employees.length; x++) {
-         console.log(employees[x]);
-
+        // add array data parsed into html
          main.innerHTML += `  <div class="card">
                     <img src="${employees[x].picture.large}" />
                     <div class="card-body">
