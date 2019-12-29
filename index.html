@@ -14,14 +14,16 @@
             <svg fill="currentColor" height="24" version="1.1" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><title>Search Icon</title><path d="M9.583 2a7.583 7.583 0 0 1 7.584 7.583 7.601 7.601 0 0 1-1.82 4.935l.315.315h.921l5.834 5.834-1.75 1.75-5.834-5.834v-.921l-.315-.315a7.601 7.601 0 0 1-4.935 1.82A7.583 7.583 0 0 1 9.583 2zm0 2.333a5.228 5.228 0 0 0-5.25 5.25 5.228 5.228 0 0 0 5.25 5.25 5.228 5.228 0 0 0 5.25-5.25 5.228 5.228 0 0 0-5.25-5.25z" fill-rule="nonzero"></path></svg>
         </nav>
     </header>
+    <!--dropdown search bar-->
     <div class="search-bar hide">
-        <svg fill="currentColor" height="32" version="1.1" viewBox="0 0 32 32" width="52" xmlns="http://www.w3.org/2000/svg"><title>Search Icon</title><path d="M9.583 2a7.583 7.583 0 0 1 7.584 7.583 7.601 7.601 0 0 1-1.82 4.935l.315.315h.921l5.834 5.834-1.75 1.75-5.834-5.834v-.921l-.315-.315a7.601 7.601 0 0 1-4.935 1.82A7.583 7.583 0 0 1 9.583 2zm0 2.333a5.228 5.228 0 0 0-5.25 5.25 5.228 5.228 0 0 0 5.25 5.25 5.228 5.228 0 0 0 5.25-5.25 5.228 5.228 0 0 0-5.25-5.25z" fill-rule="nonzero"></path></svg>  <input class="search" type="search" placeholder="Search" />
+        <svg fill="currentColor" height="32" version="1.1" viewBox="0 0 32 32" width="52" xmlns="http://www.w3.org/2000/svg"><title>Search Icon</title><path d="M9.583 2a7.583 7.583 0 0 1 7.584 7.583 7.601 7.601 0 0 1-1.82 4.935l.315.315h.921l5.834 5.834-1.75 1.75-5.834-5.834v-.921l-.315-.315a7.601 7.601 0 0 1-4.935 1.82A7.583 7.583 0 0 1 9.583 2zm0 2.333a5.228 5.228 0 0 0-5.25 5.25 5.228 5.228 0 0 0 5.25 5.25 5.228 5.228 0 0 0 5.25-5.25 5.228 5.228 0 0 0-5.25-5.25z" fill-rule="nonzero"></path></svg>
+        <input class="search" type="search" placeholder="Search" />
     </div>
 
-        <div class="main">
+    <div class="main">
 
-            <h1>Staff</h1>
-            <div class="container">
+        <h1>Staff</h1>
+        <div class="container">
             <!---sample card-->
             <!---
             <div class="card">
@@ -32,17 +34,43 @@
             </div>
             </div>
             -->
-            </div>
         </div>
-    <footer><p>made by george</p></footer>
+    </div>
+    <!---Modal Background-->
+    <div id="modal-bg" class="modal hide">
+
+        <!-- Modal Container -->
+        <div class="modal-container">
+            <span class="close">&times;</span>
+            <img src="images/member-1.jpg" />
+            <div class="card-body">
+                <h3>Alex Goldwoman</h3>
+                <p>alexgoldwoman@gmail.com</p>
+            </div>
+            <ul class="details">
+                <li data-title="Hi, My name is" data-value="Sheila Harrison" data-label="name" class=" "></li>
+                <li data-title="My email address is" data-value="sheila.harrison@example.com" data-label="email" data-caps="false" class="  "></li>
+                <li data-title="My birthday is" data-value="1/6/1981" data-label="birthday" class=" "></li>
+                <li data-title="My address is" data-value="6436 James St" data-label="location" class=" "></li>
+                <li data-title="My phone number is" data-value="(171)-402-9615" data-label="phone" class=" "></li>
+                <li data-title="My password is" data-value="naughty" data-label="pass" data-caps="false" class=" active"></li>
+            </ul>
+        </div>
+
+    </div>
+    <!---End of Modal-->
+
+    <footer style="text-align:center; display: grid; grid-template-columns: 1fr 1fr;"><p>made by george</p><p>Powered by randomuser.me</p></footer>
+
+    <!---Scripts-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
-   
 
-        <script src="app.js"></script>
-        <script src="search.js"></script>
 
-    
+    <script src="app.js"></script>
+    <script src="search.js"></script>
+    <script src="modal.js"></script>
+
 </body>
 </html>
