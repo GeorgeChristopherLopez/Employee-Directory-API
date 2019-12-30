@@ -30,12 +30,26 @@ async function getData () {
 
  function displayData() {
      for (let x = 0; x < employees.length; x++) {
-        // add array data parsed into html
-         main.innerHTML += `  <div class="card">
+         // add array data parsed into html
+         console.log(employees[x]);
+         main.innerHTML += ` <span class="close hide">X</span> <div class="card">
                     <img src="${employees[x].picture.large}" />
                     <div class="card-body">
                         <h3>${employees[x].name.first} ${employees[x].name.last}</h3>
-                        <p>${employees[x].email}</p>
+                        <p>${employees[x].login.username}</p>
+                        
+                    </div>
+                    <div class="lastChild hide">
+                                                <ul class="details" style="text-align: center;">
+                            <li>${employees[x].email}</li>
+                            <li>${employees[x].gender}</li>
+                            <li>${employees[x].location.city}, ${employees[x].location.state}  </li>
+                            <li>${employees[x].location.country}</li>
+                            <li>${employees[x].cell}</li>
+                           
+
+                        </ul>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr;"><button>LEFT</button><button>RIGHT</button></div>
                     </div>
                 </div>`;
     }
